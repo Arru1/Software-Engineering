@@ -8,10 +8,14 @@
 # Identify and print the indices of days where the temperature exceeded 20°C.
 import numpy as np
 temp=np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
+avg_temp = np.mean(temp)
+print(f"Average temperature for the week: {avg_temp:.2f}°C")
+# (.2f means showing two decimal number"18.76")
+
 max_value=np.max(temp)
 min_value=np.min(temp)  
-print("Highest number:",max_value)  
-print("Lowest number:", min_value)
+print(f"Highest number:{max_value}°C")  
+print(f"Lowest number: {min_value}°C")
 
 celsius_temp=np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
 fahrenheit_temp=celsius_temp*9/5+32
