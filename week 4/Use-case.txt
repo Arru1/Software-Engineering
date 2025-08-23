@@ -1,0 +1,63 @@
+YB College needs a database system to help manage important information like student enrollments, courses, lecturers, and grades. This system will make it easier for faculty and students to manage and access academic data, improving administrative tasks and allowing both faculty and students to use the system smoothly.
+
+Actors and Use Cases:
+1. Actors:
+
+Administrator:
+Role: Manages the system, including user accounts and system settings.
+Responsibilities:   
+Add, update, or delete records for students, lecturers, and courses.
+Assign lecturers to courses.
+Generate reports on students and courses.
+
+Student:
+Role: Enrolled in courses and uses the system to track their academic progress.
+Responsibilities:
+Register for courses.
+View grades, course schedules, and academic records.
+Request transcripts.
+Update personal information.
+
+Lecturer:
+Role: Teaches courses and tracks student progress.
+Responsibilities:
+Manage grades and feedback for students.
+Track attendance.
+View student results.
+
+Course Coordinator:
+Role: Oversees the courses and assigns lecturers.
+Responsibilities:
+Create or modify courses.
+Assign lecturers to teach courses.
+
+Registrar:
+Role: Manages student registrations and academic records.
+Responsibilities:
+Register students for courses.
+Generate student transcripts.
+
+2. Use Cases:
+1. Administrator Use Cases:
+Add/Remove Students: Admin adds or removes students from the system.
+Manage Courses: Admin adds, modifies, or deletes courses.
+Assign Lecturers: Admin assigns lecturers to teach courses.
+Generate Reports: Admin generates reports on student performance and course enrollment.
+
+2. Student Use Cases:
+Enroll in Courses: Student registers for courses they want to take.
+View Courses and Grades: Student can check their enrolled courses and see their grades.
+Request Transcripts: Student can request their academic records.
+
+3. Lecturer Use Cases:
+Grade Students: Lecturer enters grades and feedback for students.
+Take Attendance: Lecturer tracks the attendance of students in class.
+View Student Results: Lecturer checks the academic progress of their students.
+
+4. Course Coordinator Use Cases:
+Create/Modify Courses: Coordinator creates new courses or changes existing ones.
+Assign Lecturers: Coordinator assigns lecturers to the courses.
+
+5. Registrar Use Cases:
+Manage Enrollments: Registrar makes sure students are correctly registered for their courses.
+Generate Transcripts: Registrar generates official transcripts for students.
