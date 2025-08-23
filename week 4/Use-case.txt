@@ -1,0 +1,16 @@
+YB College needs a database system to help manage important information like student enrollments, courses, lecturers, and grades. This system will make it easier for faculty and students to manage and access academic data, improving administrative tasks and allowing both faculty and students to use the system smoothly.
+
+Actors and Use Cases:
+Actors:
+Administrator: Manages the system and data.
+Student: Registers for courses and views grades.
+Lecturer: Teaches courses and enters grades.
+Course Coordinator: Manages courses and assigns lecturers.
+Registrar: Handles course enrollments and transcripts.
+
+Use Cases:
+Administrator: Add/remove students, manage courses, assign lecturers.
+Student: Enroll in courses, view grades, request transcripts.
+Lecturer: Grade students, track attendance.
+Course Coordinator: Create/modify courses, assign lecturers.
+Registrar: Manage enrollments, generate transcripts.
