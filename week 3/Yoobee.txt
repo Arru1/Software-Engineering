@@ -1,0 +1,107 @@
+Yoobee College database is being developed to streamline the management of the academic data and student information. The system will track students, courses, departments, lecturers, class enrollments, and grades. The primary goal of the database is to manage student registration, course enrollment, grading, and lecturer assignments efficiently, while ensuring that data integrity and consistency are maintained. The system will support key functions for students, lecturers, and administrators, making it easier to handle daily academic operations such as managing course offerings, tracking student progress, and handling faculty assignments.
+
+Purpose and Scope of the Database:
+The purpose of the YB College database is to create a centralized system to handle:
+Student Information: Managing personal details, programs, enrollment history, and grades.
+Course Information: Storing course details such as course name, credits, and prerequisites.
+Lecturer Assignments: Associating lecturers with courses and managing their teaching schedules.
+Class Management: Handling class schedules and assignments for both students and lecturers.
+Enrollment Data: Tracking student enrollment in courses and their grades.
+
+Entities and Their Roles:
+1. Student
+Attributes:
+Student_ID (PK)
+Student_Name
+Email
+DOB
+Address
+Phone_No
+Program_ID (FK)
+Enrollment_year
+
+Role: Represents students enrolled at YB College. Each student is associated with a program and enrollment data.
+
+2. Lecturer
+Attributes:
+Lecturer_ID (PK)
+Lecturer_Name
+Email
+Phone_No
+Department_ID (FK)
+
+Role: Represents faculty members who are responsible for teaching courses. Each lecturer can handle multiple classes.
+
+3. Program
+Attributes:
+Program_ID (PK)
+Program_Name
+Duration
+Department_ID (FK)
+
+Role: Represents the academic programs offered by the college. Programs are linked to departments and contain multiple courses.
+
+4. Department
+Attributes:
+Department_ID (PK)
+Department_Name
+
+Role: Represents academic departments (e.g., Computer Science, Mathematics) at YB College. Each department can offer multiple programs and have multiple lecturers.
+
+5. Course
+Attributes:
+Course_ID (PK)
+Course_Name
+Credits
+Department_ID (FK)
+
+Role: Represents the courses offered within a program. Each course is assigned to a department and has a set of associated classes.
+
+6. Class
+Attributes:
+Class_ID (PK)
+Course_ID (FK)
+Lecturer_ID (FK)
+Schedule
+Semester
+
+Role: Represents a specific class for a course. A class includes information about the lecturer, schedule, and semester.
+
+7. Enrollment
+Attributes:
+Enrollment_ID (PK)
+Student_ID (FK)
+Class_ID (FK)
+Grade
+
+EER Diagram (Entity-Relationship Diagram):
+The EER diagram in the provided file defines how each entity relates to one another:
+Program has many Departments.
+Department has many Courses.
+Lecturer is linked to Department and can Conduct many Classes.
+Class belongs to a Course and is Conducted by a Lecturer.
+Student can Belong to a Program and can Enroll in multiple Classes, each of which results in a Grade.
+
+Table Design (Mapping to Relational Schema):
+From the EER diagram, the following tables would be required after mapping the entities:
+Program table: Contains details about each academic program.
+Department table: Stores department information.
+Lecturer table: Holds data for faculty members.
+Course table: Represents courses offered in the college.
+Class table: Represents individual classes for each course.
+Student table: Stores student details.
+Enrollment table: Tracks student enrollment in classes and their grades.
+
+Number of Tables:
+There will be 7 tables required after mapping the EER to the relational schema. These tables are as follows:
+Program (1 table)
+Department (1 table)
+Lecturer (1 table)
+Course (1 table)
+Class (1 table)
+Student (1 table)
+Enrollment (1 table)
+
+
+
+
